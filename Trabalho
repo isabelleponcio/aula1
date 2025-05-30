@@ -50,4 +50,19 @@ exit;
 $stmt=$pdo->prepare("INSERT INTO usuarios (compra,valor)VALUES (?,?)");
 $stmt->execute([$nome,$email]);
 encho json_encode(['mensagem'=>'Usuario criado com sucesso.']);
+ python
+from flask import Flask,jsonif
+app=Flask (__name___)
+@app.router('/usuario',methods=['GET])
+deft obter__usuarios():
+{''id:1,''nome'':Joao;
+{"id":2,"nome":Maria;
+]
+return jsonufy(usuarios) #
+@app.route('/usuarios',methods=['POST'])
+def adicionar_usuario():
+novo_usuario={"id:3,"nome":"Carlos"}
+return jsonify(novo_usuario),201
+if__name__=='__main__':
+app.run(debug=True)
 
