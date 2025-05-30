@@ -1,0 +1,44 @@
+	if ($_SERVER['REQUEST_URI']=='/api/usuarios'&&$_SERVER['REQUEST_METHOD"]=='COMPRAS
+{
+encho json_encode(["nome"=>"Maria",idade"=>30]);
+
+header('Content-Type:application/json');
+$data=['mensagem'=>'Olá mundo'];
+encho json_encode($data);
+$pdo=new PDO('mysql:host=localhost;dbname=meubanco','usuario,'senha');
+$usuarios=$smt->fetchAll(PDO::FETCH_ASSOC);
+encho json_encode($usuarios);
+/api
+/usuarios
+  index.php
+/db
+conexao.php
+curl http://localhost/api/usuarios
+/api
+|
+|-/usuarios
+|_ index.php
+  |_ update.php
+/- delete.php
+
+/config
+ dp.php
+
+index.php
+Endpoint GET,POST
+Endpoint PUT
+Endpoint DELETE
+<?php
+$host='localhost';
+$dp='meubanco';
+$user='';
+try{
+  $pdo=new PDO(''mysql:$host;dbname=$db",$user,$pass);
+  $pdo=>setAtribute(PDO::ATTER_ERRMODE,PDO::ERRMODE_EXCEPTION);
+}catch (PDOException $);
+die(json_encode(['erro'=>'Erro na conexao com o banco de dados:'$e->getMessage()])));
+<?php
+require_once_DIR_.'/../config/db.php';
+header('Content-Type:application/json');
+
+if
